@@ -1,9 +1,12 @@
 ---
 execution:
-  executor: selenium
+- executor: selenium
   iterations: 1
-  scenario:
-    script: dir
+  scenario: sel
+
+scenarios:
+  sel:
+    script: testcase.java
 
 services:
-- proxy2jmx
+- module: proxy2jmx
